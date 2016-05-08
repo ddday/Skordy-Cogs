@@ -3,6 +3,7 @@ from discord.ext import commands
 import os
 import asyncio
 import time
+from .utils import checks
 
 from cogs.utils.dataIO import fileIO
 from __main__ import send_cmd_help
@@ -42,11 +43,13 @@ class Scrobbler(object):
         return True
 
     @commands.group(pass_context=True)
+    @checks.is_owner()
     async def lastfmset(self, ctx):
         if ctx.invoked_subcommand is None:
             await send_cmd_help(ctx)
 
     @lastfmset.command(pass_context=True, name="enable")
+    @checks.is_owner()
     async def _lastfmset_enabled(self, ctx):
         if 'ENABLED' not in self.settings:
             self.settings['ENABLED'] = True
