@@ -1,6 +1,6 @@
 {
     "AUTHOR" : "Skordy",
-    "DESCRIPTION" : "Resolver WhoIS tools.",
+    "DESCRIPTION" : "WhoIS toolset.",
     "DISABLED" : false,
-    "NAME" : "Resolver"
+    "NAME" : "WhoIS toolset."
 }
