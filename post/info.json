@@ -1,0 +1,6 @@
+{
+    "AUTHOR" : "Skordy",
+    "DESCRIPTION" : "Posts a playlist or cog in chat.",
+    "DISABLED" : false,
+    "NAME" : "Post"
+}
